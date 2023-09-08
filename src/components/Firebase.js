@@ -25,7 +25,7 @@ import {
 
 const problemSubmissionsOutput = "problemSubmissions";
 const problemStartLogOutput = "problemStartLogs";
-const GPTExperimentOutput = "GPTExperimentOutput";
+const DynamicHintsStudy = "DynamicHintsStudy";
 const feedbackOutput = "feedbacks";
 const siteLogOutput = "siteLogs";
 const focusStatus = "focusStatus";
@@ -246,7 +246,7 @@ class Firebase {
             dynamicHint,
             bioInfo,
         };
-        return this.writeData(GPTExperimentOutput, data);
+        return this.writeData(DynamicHintsStudy, data);
         // return this.writeData(problemSubmissionsOutput, data);
     }
 
@@ -288,7 +288,7 @@ class Firebase {
             dynamicHint,
             bioInfo,
         };
-        return this.writeData(GPTExperimentOutput, data);
+        return this.writeData(DynamicHintsStudy, data);
         // return this.writeData(problemSubmissionsOutput, data);
     }
 
