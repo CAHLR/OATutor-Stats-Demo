@@ -1,3 +1,3 @@
-[submodule "src/content-sources/newsub"]
+[submodule "src/content-sources/newsubmod"]
 	path = src/content-sources/oatutor
 	url = git@github.com:CAHLR/OATutor-Content.git
