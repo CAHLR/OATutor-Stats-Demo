@@ -27,11 +27,7 @@ class MultipleChoice extends React.Component {
         const choices = []
         if (Array.isArray(_choices)) {
             [...new Set(_choices)].forEach(choice => {
-                if (choice.includes(" above")) {
-                    choices.push(choice);
-                } else {
-                    choices.unshift(choice);
-                }
+                choices.push(choice);
             })
         }
 
