@@ -25,16 +25,7 @@ class MultipleChoice extends React.Component {
         let { choices: _choices = [], variabilization } = this.props;
 
         const choices = []
-        if (Array.isArray(_choices)) {
-            [...new Set(_choices)].forEach(choice => {
-                choices.push(choice);
-            })
-        }
-       //if (choice.includes(" above")) {
-            //choices.push(choice);
-        //} else {
-            //choices.unshift(choice);
-        //}
+        
 
         return (
             <div style={{ marginRight: "5%", textAlign: "center" }}>
