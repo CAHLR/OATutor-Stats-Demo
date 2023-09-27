@@ -30,6 +30,11 @@ class MultipleChoice extends React.Component {
                 choices.push(choice);
             })
         }
+       //if (choice.includes(" above")) {
+            //choices.push(choice);
+        //} else {
+            //choices.unshift(choice);
+        //}
 
         return (
             <div style={{ marginRight: "5%", textAlign: "center" }}>
