@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OATutor-Dynamic-Hints-Study/static/css/main.f52126cd.css",
-    "main.js": "/OATutor-Dynamic-Hints-Study/static/js/main.6aa333a5.js",
+    "main.js": "/OATutor-Dynamic-Hints-Study/static/js/main.49dddc0c.js",
     "static/media/Symbola.svg": "/OATutor-Dynamic-Hints-Study/static/media/Symbola.f647c9292a2da02d9ae8.svg",
     "static/media/Symbola.eot": "/OATutor-Dynamic-Hints-Study/static/media/Symbola.d25fbd520f6558203fb4.eot",
     "static/media/Symbola.ttf": "/OATutor-Dynamic-Hints-Study/static/media/Symbola.1ac5fa7f9b82ed4ce3f3.ttf",
@@ -9,10 +9,10 @@
     "static/media/Symbola.woff2": "/OATutor-Dynamic-Hints-Study/static/media/Symbola.080d8bb6a36e8bd8966b.woff2",
     "index.html": "/OATutor-Dynamic-Hints-Study/index.html",
     "main.f52126cd.css.map": "/OATutor-Dynamic-Hints-Study/static/css/main.f52126cd.css.map",
-    "main.6aa333a5.js.map": "/OATutor-Dynamic-Hints-Study/static/js/main.6aa333a5.js.map"
+    "main.49dddc0c.js.map": "/OATutor-Dynamic-Hints-Study/static/js/main.49dddc0c.js.map"
   },
   "entrypoints": [
     "static/css/main.f52126cd.css",
-    "static/js/main.6aa333a5.js"
+    "static/js/main.49dddc0c.js"
   ]
 }
