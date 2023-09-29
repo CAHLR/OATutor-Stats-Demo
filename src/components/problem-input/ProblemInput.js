@@ -140,7 +140,8 @@ class ProblemInput extends React.Component {
                         >
                         </TextField>
                     )}
-                    {(problemType === "MultipleChoice" && keepMCOrder === true) (
+                    {keepMCOrder}
+                    {(problemType === "MultipleChoice" && keepMCOrder) (
                         <MultipleChoice
                             onChange={(evt) => this.props.editInput(evt)}
                             choices={[...this.props.step.choices].reverse()}
