@@ -49,7 +49,7 @@ class Problem extends React.Component {
 
         this.giveHintOnIncorrect = true;
         this.giveStuFeedback = giveStuFeedback == null || giveStuFeedback;
-        this.keepMCOrder = keepMCOrder == null || keepMCOrder;
+        this.keepMCOrder = keepMCOrder != null && keepMCOrder;
         this.giveStuHints = giveStuHints == null || giveStuHints;
         this.doMasteryUpdate = doMasteryUpdate == null || doMasteryUpdate;
         this.unlockFirstHint = unlockFirstHint != null && unlockFirstHint;
