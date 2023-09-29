@@ -45,6 +45,7 @@ class ProblemCard extends React.Component {
         this.giveStuFeedback = props.giveStuFeedback;
         this.giveStuHints = props.giveStuHints;
         this.unlockFirstHint = props.unlockFirstHint;
+        this.keepMCOrder = props.keepMCOrder;
         this.giveHintOnIncorrect = props.giveHintOnIncorrect;
 
         this.allowRetry = this.giveStuFeedback;
@@ -585,6 +586,7 @@ class ProblemCard extends React.Component {
                                 this.props.seed
                             )}
                             allowRetry={this.allowRetry}
+                            keepMCOrder={this.keepMCOrder}
                             giveStuFeedback={this.giveStuFeedback}
                             showCorrectness={this.showCorrectness}
                             classes={classes}

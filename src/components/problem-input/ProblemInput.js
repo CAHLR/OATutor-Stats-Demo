@@ -80,6 +80,8 @@ class ProblemInput extends React.Component {
         const { classes, state, index, showCorrectness, allowRetry, variabilization } = this.props;
         const { use_expanded_view, debug } = this.context;
         let { problemType, stepAnswer, hintAnswer, units } = this.props.step;
+        const keepMCOrder = this.props.keepMCOrder;
+
 
         const problemAttempted = state.isCorrect != null
         const correctAnswer = Array.isArray(stepAnswer) ? stepAnswer[0] : hintAnswer[0]
@@ -138,11 +140,21 @@ class ProblemInput extends React.Component {
                         >
                         </TextField>
                     )}
-                    {problemType === "MultipleChoice" && (
+                    {(problemType === "MultipleChoice" && keepMCOrder === true) (
                         <MultipleChoice
                             onChange={(evt) => this.props.editInput(evt)}
                             choices={[...this.props.step.choices].reverse()}
-                            //choices={shuffleArray(this.props.step.choices, this.props.seed)}
+                            index={index}
+                            {...(use_expanded_view && debug) ? {
+                                defaultValue: correctAnswer
+                            } : {}}
+                            variabilization={variabilization}
+                        />
+                    )}
+                    {(problemType === "MultipleChoice" && (keepMCOrder === false || keepMCOrder === null)) (
+                        <MultipleChoice
+                            onChange={(evt) => this.props.editInput(evt)}
+                            choices={shuffleArray(this.props.step.choices, this.props.seed)}
                             index={index}
                             {...(use_expanded_view && debug) ? {
                                 defaultValue: correctAnswer
