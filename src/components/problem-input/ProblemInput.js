@@ -140,7 +140,7 @@ class ProblemInput extends React.Component {
                         >
                         </TextField>
                     )}
-                    {keepMCOrder}
+                    {console.debug("MC Order", keepMCOrder)}
                     {(problemType === "MultipleChoice" && keepMCOrder) (
                         <MultipleChoice
                             onChange={(evt) => this.props.editInput(evt)}
