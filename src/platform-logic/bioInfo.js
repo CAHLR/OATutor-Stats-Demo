@@ -273,7 +273,7 @@ class BioInfo extends Component {
                         <span>
                             Please tell us about your current and past math
                             educational history and anything relevant to how you
-                            learn
+                            learn.
                         </span>
                         {/* <ul>
                             <li>
