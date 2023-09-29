@@ -45,9 +45,8 @@ class ProblemCard extends React.Component {
         this.giveStuFeedback = props.giveStuFeedback;
         this.giveStuHints = props.giveStuHints;
         this.unlockFirstHint = props.unlockFirstHint;
-        this.keepMCOrder = props.keepMCOrder;
         this.giveHintOnIncorrect = props.giveHintOnIncorrect;
-
+        this.keepMCOrder = props.keepMCOrder;
         this.allowRetry = this.giveStuFeedback;
 
         this.giveStuBottomHint = props.giveStuBottomHint;
@@ -154,22 +153,22 @@ class ProblemCard extends React.Component {
         const bioInfo = JSON.parse(localStorage.getItem("bioInfo"));
         if (bioInfo) {
             const {
-                gender,
-                age,
-                confidenceQ1,
-                confidenceQ2,
-                judgementQ1,
-                judgementQ2,
-                judgementQ3,
+                // gender,
+                // age,
+                // confidenceQ1,
+                // confidenceQ2,
+                // judgementQ1,
+                // judgementQ2,
+                // judgementQ3,
                 other,
             } = bioInfo;
-            const bio = `I'm a ${gender} and I'm ${age} years old. ${confidenceQ1}. ${confidenceQ2}. 
-            For the statement that "if I had more time for practice, I would be better in mathematics", my answer is ${judgementQ1}.
-            For the statement that "if I was more patient while solving mathematical problems, I would be better in mathematics", my answer is ${judgementQ2}.
-            For the statement that "No matter how much time I devote for studying mathematics, I can’t improve my grades", my answer is ${judgementQ3}. 
-            ${other}
-            `;
-            this.setState({ bioInfo: bio });
+            // const bio = `I'm a ${gender} and I'm ${age} years old. ${confidenceQ1}. ${confidenceQ2}.
+            // For the statement that "if I had more time for practice, I would be better in mathematics", my answer is ${judgementQ1}.
+            // For the statement that "if I was more patient while solving mathematical problems, I would be better in mathematics", my answer is ${judgementQ2}.
+            // For the statement that "No matter how much time I devote for studying mathematics, I can’t improve my grades", my answer is ${judgementQ3}.
+            // ${other}
+            // `;
+            this.setState({ bioInfo: other });
         }
     }
 
@@ -586,13 +585,13 @@ class ProblemCard extends React.Component {
                                 this.props.seed
                             )}
                             allowRetry={this.allowRetry}
-                            keepMCOrder={this.keepMCOrder}
                             giveStuFeedback={this.giveStuFeedback}
                             showCorrectness={this.showCorrectness}
                             classes={classes}
                             state={this.state}
                             step={this.step}
                             seed={this.props.seed}
+                            keepMCOrder={this.props.keepMCOrder}
                             _setState={(state) => this.setState(state)}
                             context={this.context}
                             editInput={this.editInput}
