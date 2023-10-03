@@ -20,16 +20,16 @@ app.add_middleware(
 
 API_KEY = ""
 
-def generate_gpt_prompt(quest: Quest, prompt_template: str, bio_info: str):
+def generate_gpt_prompt(context: Quest, prompt_template: str, bio_info: str):
 
-    template = clean_up_null_values(quest, prompt_template, bio_info)
+    template = clean_up_null_values(context, prompt_template, bio_info)
 
-    p_title = quest.problem_title
-    p_subtitle = quest.problem_subtitle
-    q_title = quest.question_title
-    q_subtitle = quest.question_subtitle
-    stu_ans = quest.student_answer
-    cor_ans = quest.correct_answer
+    p_title = context.problem_title
+    p_subtitle = context.problem_subtitle
+    q_title = context.question_title
+    q_subtitle = context.question_subtitle
+    stu_ans = context.student_answer
+    cor_ans = context.correct_answer
 
     template = template.format(
         problem_title = p_title, 
@@ -43,24 +43,24 @@ def generate_gpt_prompt(quest: Quest, prompt_template: str, bio_info: str):
 
     return template
 
-def clean_up_null_values(quest: Quest, template: str, bio_info: str):
+def clean_up_null_values(context: Quest, template: str, bio_info: str):
 
-    p_title_is_null = quest.problem_title is None or len(quest.problem_title) == 0
+    p_title_is_null = context.problem_title is None or len(context.problem_title) == 0
     template = remove_wrappers(template, "problem_title", p_title_is_null)
 
-    p_subtitle_is_null = quest.problem_subtitle is None or len(quest.problem_subtitle) == 0
+    p_subtitle_is_null = context.problem_subtitle is None or len(context.problem_subtitle) == 0
     template = remove_wrappers(template, "problem_subtitle", p_subtitle_is_null)
 
-    q_title_is_null = quest.question_title is None or len(quest.question_title) == 0
+    q_title_is_null = context.question_title is None or len(context.question_title) == 0
     template = remove_wrappers(template, "question_title", q_title_is_null)
 
-    q_subtitle_is_null = quest.question_subtitle is None or len(quest.question_subtitle) == 0
+    q_subtitle_is_null = context.question_subtitle is None or len(context.question_subtitle) == 0
     template = remove_wrappers(template, "question_subtitle", q_subtitle_is_null)
 
-    stud_ans_is_null = quest.student_answer is None or len(quest.student_answer) == 0
+    stud_ans_is_null = context.student_answer is None or len(context.student_answer) == 0
     template = remove_wrappers(template, "student_answer", stud_ans_is_null)
 
-    cor_ans_is_null = quest.correct_answer is None or len(quest.correct_answer) == 0
+    cor_ans_is_null = context.correct_answer is None or len(context.correct_answer) == 0
     template = remove_wrappers(template, "correct_answer", cor_ans_is_null)
 
     bio_is_null = bio_info is None or len(bio_info) == 0
@@ -99,10 +99,10 @@ async def root():
 
 @app.post("/get_hint")
 def test_question(request_data: RequestData):
-    quest = request_data.quest
+    context = request_data.context
     prompt_template = request_data.prompt_template
     bio_info = request_data.bio_info
-    gpt_prompt = generate_gpt_prompt(quest, prompt_template, bio_info)
+    gpt_prompt = generate_gpt_prompt(context, prompt_template, bio_info)
     headers = {
         'Authorization': f'Bearer {API_KEY}',
         'Content-Type': 'application/json',
