@@ -1,0 +1,234 @@
+[
+    {
+        "courseName": "Manual",
+        "courseOER": "https://openstax.org/ <OpenStax>",
+        "courseLicense": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "lessons": [
+            {
+                "id": "7lw8Brng-BrIj-4KYjtdY3cm",
+                "name": "Lesson IA2.1C1",
+                "topics": "Pre-test: Solve linear equations using a general strategy",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "solve_linear_equations_using_a_general_strategy_pretest_control1": 0.85
+                },
+                "giveStuFeedback": false,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false,
+                "allowDynamicHint": false
+            },
+            {
+                "id": "0lsnsL3Y-cl7i-78i932TRCP",
+                "name": "Lesson IA2.1C1:",
+                "topics": "Solve linear equations using a general strategy",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "solve_linear_equations_using_a_general_strategy_control1": 0.85
+                },
+                "giveStuFeedback": true,
+                "giveStuHints": true,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false
+            },
+            {
+                "id": "0URbsYgG-1TDT-W5WWdUKi41",
+                "name": "Lesson IA2.1C1",
+                "topics": "Post-test: Solve linear equations using a general strategy",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "solve_linear_equations_using_a_general_strategy_posttest_control1": 0.85
+                },
+                "giveStuFeedback": false,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false
+            },
+            {
+                "id": "7lJCx4QW-EjQl-8ZKdHVyWNv",
+                "name": "Lesson ProlificID",
+                "topics": "ID",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "prolific_id_experiment": 0.85
+                },
+                "giveStuFeedback": false,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false
+            },
+            {
+                "id": "0bSddlEH-NT8n-hJ4RaeuzNs",
+                "name": "Lesson Feedback",
+                "topics": "",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "feedback": 0.85
+                },
+                "giveStuFeedback": false,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false,
+                "keepMCOrder": true
+            }
+        ]
+    },
+    {
+        "courseName": "Worked Solutions",
+        "courseOER": "https://openstax.org/ <OpenStax>",
+        "courseLicense": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "lessons": [
+            {
+                "id": "31RIub6D-PK5z-HqYFIT01kz",
+                "name": "Lesson IA2.1E",
+                "topics": "Pre-test: Solve linear equations using a general strategy",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "solve_linear_equations_using_a_general_strategy_pretest_worked": 0.85
+                },
+                "giveStuFeedback": false,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false,
+                "allowDynamicHint": false
+            },
+            {
+                "id": "3aPg6Qji-a5qM-07rCQTWtSJ",
+                "name": "Lesson IA2.1E:",
+                "topics": "Solve linear equations using a general strategy",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "solve_linear_equations_using_a_general_strategy_experiment": 0.85
+                },
+                "giveStuFeedback": true,
+                "giveStuHints": true,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false,
+                "allowDynamicHint": false
+            },
+            {
+                "id": "7m8mJ4EE-RfzX-4zA32Tld6Z",
+                "name": "Lesson IA2.1E",
+                "topics": "Post-test: Solve linear equations using a general strategy",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "solve_linear_equations_using_a_general_strategy_posttest_worked": 0.85
+                },
+                "giveStuFeedback": false,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false
+            }
+        ]
+    },
+    {
+        "courseName": "Open Ended",
+        "courseOER": "https://openstax.org/ <OpenStax>",
+        "courseLicense": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "lessons": [
+            {
+                "id": "7GVqc5G7-tPZO-zdzNjGwrdR",
+                "name": "Lesson IA2.1O",
+                "topics": "Pre-test: Solve linear equations using a general strategy",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "solve_linear_equations_using_a_general_strategy_pretest_open": 0.85
+                },
+                "giveStuFeedback": false,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false,
+                "allowDynamicHint": false
+            },
+            {
+                "id": "6zzKUire-rnIm-37eETk74tj",
+                "name": "Lesson IA2.1O:",
+                "topics": "Solve linear equations using a general strategy",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "solve_linear_equations_using_a_general_strategy_control2": 0.85
+                },
+                "giveStuFeedback": true,
+                "giveStuHints": true,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "allowDynamicHint": true,
+                "allowBottomHint": true
+            },
+            {
+                "id": "7SD9RMZN-bnIN-2td5Jpk5Ru",
+                "name": "Lesson IA2.1O",
+                "topics": "Post-test: Solve linear equations using a general strategy",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "solve_linear_equations_using_a_general_strategy_posttest_open": 0.85
+                },
+                "giveStuFeedback": false,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false
+            }
+        ]
+    },
+    {
+        "courseName": "No Feedback",
+        "courseOER": "https://openstax.org/ <OpenStax>",
+        "courseLicense": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+        "lessons": [
+            {
+                "id": "02zdEQNx-YuTV-vfEJAZ0IQr",
+                "name": "Lesson IA2.1C2",
+                "topics": "Pre-test: Solve linear equations using a general strategy",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "solve_linear_equations_using_a_general_strategy_pretest_control2": 0.85
+                },
+                "giveStuFeedback": false,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false,
+                "allowDynamicHint": false
+            },
+            {
+                "id": "3IeTa75k-QL2Y-5B3QXPTuIw",
+                "name": "Lesson IA2.1C2:",
+                "topics": "Solve linear equations using a general strategy",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "solve_linear_equations_using_a_general_strategy_control2": 0.85
+                },
+                "giveStuFeedback": true,
+                "giveStuHints": true,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false,
+                "allowDynamicHint": false
+            },
+            {
+                "id": "6saftzWc-PpUg-daphOj0Nox",
+                "name": "Lesson IA2.1C2",
+                "topics": "Post-test: Solve linear equations using a general strategy",
+                "allowRecycle": false,
+                "learningObjectives": {
+                    "solve_linear_equations_using_a_general_strategy_posttest_control2": 0.85
+                },
+                "giveStuFeedback": false,
+                "giveStuHints": false,
+                "doMasteryUpdate": false,
+                "showStuMastery": false,
+                "unlockFirstHint": false
+            }
+        ]
+    }
+]
