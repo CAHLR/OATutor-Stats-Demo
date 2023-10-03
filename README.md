@@ -20,7 +20,7 @@ the form of hints and scaffolds, authored and edited by the OATutor project, als
 3. A subset of problems are derivatives of _Openstax: College Algebra_ by OpenStax, used under CC
    BY 4.0
    
-## Back-end Set up and Requirements
+## Back-end set up and Requirements
 
 The installation assumes you have downloaded python
 
@@ -61,8 +61,8 @@ The core of the project revolves around backend.py and model.py
 - `clean_up_null_values`: clean up the prompt where null values of the parameters are inserted
 -  `remove_wrappers`: remove the wrappers in the prompt_template
 - `reformat_hint`: reformat the hint to latex styles
-- 
-## Front-end Set up and Requirements
+  
+## Front-end set up and Requirements
 
 The installation assumes that you already have Git, Node.js, and npm installed.
 
