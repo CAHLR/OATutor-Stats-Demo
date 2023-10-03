@@ -8,24 +8,6 @@ a middleware backend is required by Learning Tools Interoperability (LTI). Our [
 >
 > [Sign-up for our mailinglist](https://forms.gle/9SedjDENmfhBM13v8)
 
-## Paper
-To credit this system, please cite our CHI'23 paper:
-
-Zachary A. Pardos, Matthew Tang, Ioannis Anastasopoulos, Shreya K. Sheel, and Ethan Zhang. 2023. OATutor: An Open-source Adaptive Tutoring System and Curated Content Library for Learning Sciences Research. In *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23)*. Association for Computing Machinery, New York, NY, USA, Article 416, 1–17. [https://doi.org/10.1145/3544548.3581574](https://doi.org/10.1145/3544548.3581574)
-```
-@inproceedings{pardos2023oat,
-  title={OATutor: An Open-source Adaptive Tutoring System and Curated Content Library for Learning Sciences Research},
-  author={Pardos, Z.A., Tang, M., Anastasopoulos, I., Sheel, S.K., Zhang, E},
-  booktitle={Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},
-  pages={1--17},
-  organization={Association for Computing Machinery},
-  doi={https://doi.org/10.1145/3544548.3581574},
-  year={2023}
-}
-```
-
-Our new pre-print, reporting preliminary finding on learning gains and ChatGPT-based hint evaluation: [https://arxiv.org/abs/2302.06871](https://arxiv.org/abs/2302.06871)
-
 ### Creative Commons Attribution
 
 The content submodule repository includes three creative commons (CC BY) textbooks worth of algebra problems with tutoring supports in 
@@ -37,12 +19,54 @@ the form of hints and scaffolds, authored and edited by the OATutor project, als
    BY 4.0
 3. A subset of problems are derivatives of _Openstax: College Algebra_ by OpenStax, used under CC
    BY 4.0
+   
+## Back-end Set up and Requirements
 
-## Requirements
+The installation assumes you have downloaded python
+
+### Installation
+
+```sh
+pip install fastapi
+pip install uvicorn
+```
+### Local Development Server
+
+```sh
+uvicorn backend:app
+```
+After running the script, the back-end will be run on local url: http://127.0.0.1:8000/get_hint
+
+### Project Structure:
+
+The core of the project revolves around backend.py and model.py
+
+#### model.py
+
+- `Quest`: contains the necessary parameters for a single question and their required types
+    - problem_title: str
+    - problem_subtitle: str
+    - question_title: str
+    - question_subtitle: str
+    - student_answer: str
+    - correct_answer: str
+- `RequestData`: contains the necessary parameters for getting the dynamic hint and their required types
+    - context: Quest
+    - prompt_template: str
+    - bio_info: str
+
+#### backend.py
+- `test_question`: entry point of the getting hint url of the back-end
+- `generate_gpt_prompt`: generate the prompt for gpt using the parameters sent from back-end
+- `clean_up_null_values`: clean up the prompt where null values of the parameters are inserted
+-  `remove_wrappers`: remove the wrappers in the prompt_template
+- `reformat_hint`: reformat the hint to latex styles
+- 
+## Front-end Set up and Requirements
 
 The installation assumes that you already have Git, Node.js, and npm installed.
 
-## Installation
+### Installation
 
 ```sh
 git clone --recurse-submodules https://github.com/CAHLR/OATutor-DynamicHint-Support.git
