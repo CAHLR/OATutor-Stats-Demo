@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/OATutor-Dynamic-Hints-Study/static/css/main.f52126cd.css",
-    "main.js": "/OATutor-Dynamic-Hints-Study/static/js/main.a10878c6.js",
-    "static/media/Symbola.svg": "/OATutor-Dynamic-Hints-Study/static/media/Symbola.f647c9292a2da02d9ae8.svg",
-    "static/media/Symbola.eot": "/OATutor-Dynamic-Hints-Study/static/media/Symbola.d25fbd520f6558203fb4.eot",
-    "static/media/Symbola.ttf": "/OATutor-Dynamic-Hints-Study/static/media/Symbola.1ac5fa7f9b82ed4ce3f3.ttf",
-    "static/media/Symbola.woff": "/OATutor-Dynamic-Hints-Study/static/media/Symbola.353fd9bde3c87711f5fc.woff",
-    "static/media/Symbola.woff2": "/OATutor-Dynamic-Hints-Study/static/media/Symbola.080d8bb6a36e8bd8966b.woff2",
-    "index.html": "/OATutor-Dynamic-Hints-Study/index.html",
-    "main.f52126cd.css.map": "/OATutor-Dynamic-Hints-Study/static/css/main.f52126cd.css.map",
-    "main.a10878c6.js.map": "/OATutor-Dynamic-Hints-Study/static/js/main.a10878c6.js.map"
+    "main.css": "/OATutor-Precalculus-Demo/static/css/main.b0c38da1.css",
+    "main.js": "/OATutor-Precalculus-Demo/static/js/main.782211d8.js",
+    "static/media/Symbola.svg": "/OATutor-Precalculus-Demo/static/media/Symbola.f647c9292a2da02d9ae8.svg",
+    "static/media/Symbola.eot": "/OATutor-Precalculus-Demo/static/media/Symbola.d25fbd520f6558203fb4.eot",
+    "static/media/Symbola.ttf": "/OATutor-Precalculus-Demo/static/media/Symbola.1ac5fa7f9b82ed4ce3f3.ttf",
+    "static/media/Symbola.woff": "/OATutor-Precalculus-Demo/static/media/Symbola.353fd9bde3c87711f5fc.woff",
+    "static/media/Symbola.woff2": "/OATutor-Precalculus-Demo/static/media/Symbola.080d8bb6a36e8bd8966b.woff2",
+    "index.html": "/OATutor-Precalculus-Demo/index.html",
+    "main.b0c38da1.css.map": "/OATutor-Precalculus-Demo/static/css/main.b0c38da1.css.map",
+    "main.782211d8.js.map": "/OATutor-Precalculus-Demo/static/js/main.782211d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f52126cd.css",
-    "static/js/main.a10878c6.js"
+    "static/css/main.b0c38da1.css",
+    "static/js/main.782211d8.js"
   ]
 }
