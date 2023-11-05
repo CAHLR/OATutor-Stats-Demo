@@ -1,6 +1,6 @@
 [submodule "src/content-sources/subb"]
 	path = src/content-sources/oatutor
 	url = https://github.com/CAHLR/OATutor-Content.git
-[submodule "src/content-sources/OATutor-Content"]
+[submodule "src/content-sources/oatttt"]
 	path = src/content-sources/oatutor
 	url = https://github.com/CAHLR/OATutor-Content.git
