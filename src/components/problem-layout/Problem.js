@@ -365,7 +365,7 @@ class Problem extends React.Component {
         var oerArray, licenseArray;
         var oerLink, oerName;
         var licenseLink, licenseName;
-
+	try {
         if (problem.oer != null && problem.oer.includes(" <")) {
             oerArray = problem.oer.split(" <");
         } else if (lesson.courseOER != null && lesson.courseOER.includes(" ")) {
@@ -373,21 +373,27 @@ class Problem extends React.Component {
         } else {
             oerArray = ["https://OATutor.io", "OATutor>"];
         }
+	} catch(error) {
+		oerArray = ["https://OATutor.io", "OATutor>"];
+	}
 
         oerLink = oerArray[0];
         oerName = oerArray[1].substring(0, oerArray[1].length - 1);
 
-        if (problem.license != null && problem.license.includes(" ")) {
-            licenseArray = problem.license.split(" <");
-        } else if (
-            lesson.courseLicense != null &&
-            lesson.courseLicense.includes(" ")
-        ) {
-            licenseArray = lesson.courseLicense.split(" <");
-        } else {
+        try {
+            if (problem.license != null && problem.license.includes(" ")) {
+                licenseArray = problem.license.split(" <");
+            } else if (
+                lesson.courseLicense != null &&
+                lesson.courseLicense.includes(" ")
+            ) {
+                licenseArray = lesson.courseLicense.split(" <");
+            } else {
+                licenseArray = ["", ""];
+            }
+        } catch(error) {
             licenseArray = ["", ""];
         }
-
         licenseLink = licenseArray[0];
         licenseName = licenseArray[1].substring(0, licenseArray[1].length - 1);
         return [oerLink, oerName, licenseLink, licenseName];
