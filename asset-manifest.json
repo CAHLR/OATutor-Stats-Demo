@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/OATutor-Stats-Demo/static/css/main.29a3063a.css",
-    "main.js": "/OATutor-Stats-Demo/static/js/main.c1165f2a.js",
-    "static/media/Symbola.svg": "/OATutor-Stats-Demo/static/media/Symbola.f647c9292a2da02d9ae8.svg",
-    "static/media/Symbola.eot": "/OATutor-Stats-Demo/static/media/Symbola.d25fbd520f6558203fb4.eot",
-    "static/media/Symbola.ttf": "/OATutor-Stats-Demo/static/media/Symbola.1ac5fa7f9b82ed4ce3f3.ttf",
-    "static/media/Symbola.woff": "/OATutor-Stats-Demo/static/media/Symbola.353fd9bde3c87711f5fc.woff",
-    "static/media/Symbola.woff2": "/OATutor-Stats-Demo/static/media/Symbola.080d8bb6a36e8bd8966b.woff2",
-    "index.html": "/OATutor-Stats-Demo/index.html",
-    "main.29a3063a.css.map": "/OATutor-Stats-Demo/static/css/main.29a3063a.css.map",
-    "main.c1165f2a.js.map": "/OATutor-Stats-Demo/static/js/main.c1165f2a.js.map"
+    "main.css": "/OATutor-Statistics-Demo/static/css/main.aa8cc3cd.css",
+    "main.js": "/OATutor-Statistics-Demo/static/js/main.a01847e3.js",
+    "static/media/Symbola.svg": "/OATutor-Statistics-Demo/static/media/Symbola.f647c9292a2da02d9ae8.svg",
+    "static/media/Symbola.eot": "/OATutor-Statistics-Demo/static/media/Symbola.d25fbd520f6558203fb4.eot",
+    "static/media/Symbola.ttf": "/OATutor-Statistics-Demo/static/media/Symbola.1ac5fa7f9b82ed4ce3f3.ttf",
+    "static/media/Symbola.woff": "/OATutor-Statistics-Demo/static/media/Symbola.353fd9bde3c87711f5fc.woff",
+    "static/media/Symbola.woff2": "/OATutor-Statistics-Demo/static/media/Symbola.080d8bb6a36e8bd8966b.woff2",
+    "index.html": "/OATutor-Statistics-Demo/index.html",
+    "main.aa8cc3cd.css.map": "/OATutor-Statistics-Demo/static/css/main.aa8cc3cd.css.map",
+    "main.a01847e3.js.map": "/OATutor-Statistics-Demo/static/js/main.a01847e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.29a3063a.css",
-    "static/js/main.c1165f2a.js"
+    "static/css/main.aa8cc3cd.css",
+    "static/js/main.a01847e3.js"
   ]
 }
